@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>露点-影视内容分级与画面尺度说明指南</title>
+<meta name="description" content="围绕露点这一常见影视与内容分级术语，说明其基本含义、在不同媒介中的使用场景、分级与审查背景、观众选择建议以及常见疑问，帮助读者理性理解画面尺度相关信息。">
+<meta name="keywords" content="露点,画面尺度,内容分级,影视审查,观影提示,媒介素养,电影分级">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  background: #f6f4f1;
+  color: #2b2b2b;
+  line-height: 1.75;
+  font-size: 16px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* 顶部信息条 */
+.topbar {
+  background: #1f1c1a;
+  color: #c9c2ba;
+  font-size: 13px;
+  letter-spacing: .3px;
+}
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+  flex-wrap: wrap;
+}
+.topbar span {
+  opacity: .85;
+}
+.topbar nav a {
+  margin-left: 18px;
+  color: #c9c2ba;
+  transition: color .2s;
+}
+.topbar nav a:hover {
+  color: #e8b96a;
+}
+/* 页眉 */
+header.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e6e0d9;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+  gap: 24px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #1f1c1a;
+  letter-spacing: .5px;
+  white-space: nowrap;
+}
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #d98b3a, #b85c2e);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+.main-nav {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.main-nav a {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #4a4540;
+  transition: background .2s, color .2s;
+}
+.main-nav a:hover,
+.main-nav a.active {
+  background: #f3ece3;
+  color: #b85c2e;
+}
+.header-tip {
+  font-size: 13px;
+  color: #8a827a;
+  border-left: 1px solid #e6e0d9;
+  padding-left: 18px;
+  max-width: 200px;
+  line-height: 1.5;
+}
+/* 首屏 */
+.hero {
+  background: linear-gradient(160deg, #241f1c 0%, #3a2f28 55%, #4a3a2e 100%);
+  color: #f2ece5;
+  padding: 62px 0 56px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(217,139,58,.28), transparent 70%);
+}
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 38px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: .5px;
+  margin-bottom: 18px;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #e8b96a;
+}
+.hero p.lead {
+  font-size: 16px;
+  color: #cdc4ba;
+  max-width: 620px;
+  margin-bottom: 26px;
+}
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  padding: 11px 26px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform .15s, box-shadow .15s, background .2s;
+}
+.btn-primary {
+  background: #d98b3a;
+  color: #211b16;
+}
+.btn-primary:hover {
+  background: #e8b96a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(217,139,58,.3);
+}
+.btn-ghost {
+  border: 1px solid rgba(232,185,106,.5);
+  color: #e8b96a;
+}
+.btn-ghost:hover {
+  background: rgba(232,185,106,.12);
+}
+.hero-aside {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(232,185,106,.22);
+  border-radius: 14px;
+  padding: 26px 24px;
+  backdrop-filter: blur(2px);
+}
+.hero-aside h2 {
+  font-size: 16px;
+  color: #e8b96a;
+  margin-bottom: 14px;
+  letter-spacing: .5px;
+}
+.hero-aside ul {
+  list-style: none;
+}
+.hero-aside li {
+  font-size: 14px;
+  color: #d3cbc1;
+  padding: 9px 0;
+  border-bottom: 1px dashed rgba(255,255,255,.12);
+  display: flex;
+  gap: 10px;
+}
+.hero-aside li:last-child {
+  border-bottom: none;
+}
+.hero-aside li b {
+  color: #f2ece5;
+  font-weight: 600;
+}
+.dot {
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d98b3a;
+  margin-top: 9px;
+}
+/* 通用区块 */
+section {
+  padding: 62px 0;
+}
+.section-head {
+  margin-bottom: 34px;
+  max-width: 760px;
+}
+.section-head .kicker {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #b85c2e;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-head h2 {
+  font-size: 27px;
+  color: #1f1c1a;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.section-head p {
+  color: #6b635b;
+  font-size: 15px;
+}
+.bg-white {
+  background: #fff;
+}
+.bg-soft {
+  background: #f1ece6;
+}
+/* 概念解释 */
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.concept-card {
+  background: #fff;
+  border: 1px solid #e9e2da;
+  border-radius: 12px;
+  padding: 26px 24px;
+  transition: box-shadow .2s, transform .2s;
+}
+.concept-card:hover {
+  box-shadow: 0 10px 26px rgba(60,45,30,.08);
+  transform: translateY(-3px);
+}
+.concept-card .num {
+  font-size: 13px;
+  font-weight: 700;
+  color: #d98b3a;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.concept-card h3 {
+  font-size: 17px;
+  color: #1f1c1a;
+  margin-bottom: 10px;
+}
+.concept-card p {
+  font-size: 14.5px;
+  color: #5f574f;
+}
+/* 分级对照表 */
+.rating-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(60,45,30,.06);
+  font-size: 14.5px;
+}
+.rating-table thead {
+  background: #2b2622;
+  color: #f0e9e1;
+}
+.rating-table th,
+.rating-table td {
+  padding: 15px 18px;
+  text-align: left;
+  vertical-align: top;
+}
+.rating-table tbody tr {
+  border-bottom: 1px solid #efe9e2;
+}
+.rating-table tbody tr:last-child {
+  border-bottom: none;
+}
+.rating-table tbody tr:nth-child(even) {
+  background: #faf7f4;
+}
+.rating-table td:first-child {
+  font-weight: 700;
+  color: #b85c2e;
+  white-space: nowrap;
+}
+.rating-note {
+  font-size: 13px;
+  color: #8a827a;
+  margin-top: 14px;
+  line-height: 1.7;
+}
+/* 场景列表 */
+.scene-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.scene-item {
+  background: #fff;
+  border-left: 4px solid #d98b3a;
+  border-radius: 0 10px 10px 0;
+  padding: 22px 24px;
+  box-shadow: 0 3px 14px rgba(60,45,30,.05);
+}
+.scene-item h3 {
+  font-size: 16.5px;
+  margin-bottom: 8px;
+  color: #1f1c1a;
+}
+.scene-item p {
+  font-size: 14.5px;
+  color: #5f574f;
+}
+/* 建议区 */
+.tips-wrap {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 40px;
+  align-items: start;
+}
+.tips-list {
+  list-style: none;
+  counter-reset: tip;
+}
+.tips-list li {
+  counter-increment: tip;
+  position: relative;
+  padding: 16px 0 16px 52px;
+  border-bottom: 1px solid #e5ded6;
+  font-size: 15px;
+  color: #4a4540;
+}
+.tips-list li:last-child {
+  border-bottom: none;
+}
+.tips-list li::before {
+  content: counter(tip, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f3ece3;
+  color: #b85c2e;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tips-list li b {
+  color: #1f1c1a;
+}
+.side-box {
+  background: #2b2622;
+  color: #ddd5cc;
+  border-radius: 14px;
+  padding: 28px 26px;
+}
+.side-box h3 {
+  color: #e8b96a;
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+.side-box p {
+  font-size: 14.5px;
+  margin-bottom: 14px;
+  color: #c6bdb3;
+}
+.side-box ul {
+  list-style: none;
+  font-size: 14.5px;
+}
+.side-box li {
+  padding: 8px 0 8px 18px;
+  position: relative;
+  color: #cdc4ba;
+  border-bottom: 1px dashed rgba(255,255,255,.1);
+}
+.side-box li:last-child {
+  border-bottom: none;
+}
+.side-box li::before {
+  content: "·";
+  position: absolute;
+  left: 4px;
+  color: #d98b3a;
+  font-weight: 700;
+}
+/* FAQ */
+.faq-list {
+  max-width: 900px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid #e9e2da;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.faq-q {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 19px 52px 19px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f1c1a;
+  cursor: pointer;
+  position: relative;
+  font-family: inherit;
+  line-height: 1.6;
+}
+.faq-q::after {
+  content: "+";
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #d98b3a;
+  font-weight: 400;
+  transition: transform .2s;
+}
+.faq-item.open .faq-q::after {
+  content: "−";
+}
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
+}
+.faq-a-inner {
+  padding: 0 22px 20px;
+  font-size: 14.5px;
+  color: #5f574f;
+  line-height: 1.8;
+}
+/* 页脚 */
+footer.site-footer {
+  background: #1f1c1a;
+  color: #a89f96;
+  padding: 52px 0 26px;
+  font-size: 14px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 34px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.footer-brand .logo {
+  color: #f2ece5;
+  margin-bottom: 14px;
+}
+.footer-brand p {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: #8f867d;
+  max-width: 300px;
+}
+.footer-col h4 {
+  color: #e8b96a;
+  font-size: 14.5px;
+  margin-bottom: 14px;
+  letter-spacing: .5px;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col li {
+  margin-bottom: 9px;
+}
+.footer-col a {
+  color: #a89f96;
+  font-size: 13.5px;
+  transition: color .2s;
+}
+.footer-col a:hover {
+  color: #e8b96a;
+}
+.footer-bottom {
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #7d746b;
+}
+/* 响应式 */
+@media (max-width: 980px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .concept-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tips-wrap {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .header-inner {
+    height: auto;
+    padding: 14px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .header-tip {
+    display: none;
+  }
+  .main-nav a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .hero {
+    padding: 44px 0 40px;
+  }
+  .hero h1 {
+    font-size: 27px;
+  }
+  .concept-grid,
+  .scene-list {
+    grid-template-columns: 1fr;
+  }
+  section {
+    padding: 44px 0;
+  }
+  .section-head h2 {
+    font-size: 22px;
+  }
+  .rating-table {
+    font-size: 13.5px;
+  }
+  .rating-table th,
+  .rating-table td {
+    padding: 11px 12px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .topbar .container {
+    height: auto;
+    padding: 8px 20px;
+    gap: 6px;
+  }
+  .topbar nav a {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>影视内容分级与画面尺度参考</span>
+    <nav>
+      <a href="#concept">术语说明</a>
+      <a href="#rating">分级对照</a>
+      <a href="#scene">使用场景</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">尺</span>
+      画面尺度观察
+    </a>
+    <nav class="main-nav">
+      <a class="active" href="#top">首页</a>
+      <a href="#concept">术语说明</a>
+      <a href="#rating">分级对照</a>
+      <a href="#scene">使用场景</a>
+      <a href="#advice">选择建议</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <div class="header-tip">理性看待画面信息<br>按需选择观看内容</div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>露点：理解影视与内容分级中的<em>画面尺度</em>概念</h1>
+        <p class="lead">
+          “露点”是观众在讨论影视作品、分级制度与内容审核时经常遇到的说法。它通常指向画面中涉及身体暴露的镜头，但具体所指会因语境、地区分级标准与作品类型而不同。本页从术语含义、分级背景、常见使用场景和观影选择建议几个角度，帮助读者建立清晰、理性的认识。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#concept">从术语开始了解</a>
+          <a class="btn btn-ghost" href="#rating">查看分级对照</a>
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <h2>阅读前先明确三点</h2>
+        <ul>
+          <li><span class="dot"></span><span><b>含义随语境变化：</b>不同地区、不同平台对同一说法的界定并不一致。</span></li>
+          <li><span class="dot"></span><span><b>与分级相关但不等同：</b>分级是多因素综合判断，并非只看单一镜头。</span></li>
+          <li><span class="dot"></span><span><b>观看应尊重规则：</b>遵守所在地区法律法规与平台使用条款。</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 术语说明 -->
+  <section id="concept" class="bg-white">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">术语说明</span>
+        <h2>“露点”在内容讨论中通常指什么</h2>
+        <p>这个说法本身并不是严格的分级术语，而更像是一种口语化的概括。理解它，需要先分清几个容易混淆的层面。</p>
+      </div>
+      <div class="concept-grid">
+        <div class="concept-card">
+          <div class="num">01 / 字面层面</div>
+          <h3>画面中的身体暴露镜头</h3>
+          <p>在日常讨论中，它多被用来描述影视或影像作品里出现身体暴露的画面。由于不同作品、不同镜头的呈现方式差异很大，这个说法本身并不精确，也无法单凭一个词判断作品的整体尺度。</p>
+        </div>
+        <div class="concept-card">
+          <div class="num">02 / 分级层面</div>
+          <h3>分级判断中的一个参考因素</h3>
+          <p>各国和地区的影视分级体系通常会综合考量暴力、语言、性暗示、药物使用、恐怖元素等多类内容，身体暴露只是其中可能被纳入考量的一项，而不是唯一标准。</p>
+        </div>
+        <div class="concept-card">
+          <div class="num">03 / 传播层面</div>
+          <h3>平台标注与观众提示</h3>
+          <p>部分流媒体平台和影院会提供内容提示或年龄建议，帮助观众在观看前了解作品可能包含的内容类型。这类提示的目的是辅助选择，而非对作品作出艺术评价。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分级对照 -->
+  <section id="rating" class="bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">分级对照</span>
+        <h2>常见分级思路与年龄提示的参考框架</h2>
+        <p>下表以抽象方式呈现常见分级思路的差异，仅用于帮助理解分级逻辑，不代表任何具体国家或机构的官方标准。</p>
+      </div>
+      <table class="rating-table">
+        <thead>
+          <tr>
+            <th>分级倾向</th>
+            <th>大致面向人群</th>
+            <th>内容考量的一般方向</th>
+            <th>给观众的提示</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>普遍级</td>
+            <td>全年龄观众</td>
+            <td>内容温和，通常不包含明显的暴露、暴力或强烈刺激画面</td>
+            <td>适合家庭共同观看，一般无需额外提示</td>
+          </tr>
+          <tr>
+            <td>建议家长指导</td>
+            <td>儿童需家长陪同</td>
+            <td>可能包含轻度暗示、个别敏感镜头或需要解释的情节</td>
+            <td>建议家长提前了解内容，陪伴观看并适当引导</td>
+          </tr>
+          <tr>
+            <td>限制级倾向</td>
+            <td>青少年及以上</td>
+            <td>可能涉及较明显的成人主题、暴露镜头或较强情绪冲击</td>
+            <td>建议观众根据自身接受度选择，未成年人谨慎观看</td>
+          </tr>
+          <tr>
+            <td>成人向内容</td>
+            <td>成年观众</td>
+            <td>内容主题与呈现方式面向成年人，可能包含较多敏感元素</td>
+            <td>需遵守所在地区法律法规与平台条款，未成年人不应接触</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="rating-note">
+        说明：以上为便于理解的概括性框架。实际分级由各地主管部门或行业机构依据本地法规与标准制定，具体作品的分级结果应以官方标注为准。本页不提供任何具体影片的尺度判断。
+      </p>
+    </div>
+  </section>
+
+  <!-- 使用场景 -->
+  <section id="scene" class="bg-white">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">使用场景</span>
+        <h2>这个词常出现在哪些讨论情境中</h2>
+        <p>了解它出现的位置，有助于判断对方真正想表达什么，避免把不同层面的问题混为一谈。</p>
+      </div>
+      <div class="scene-list">
+        <div class="scene-item">
+          <h3>观影前的信息查询</h3>
+          <p>观众在决定是否观看某部作品时，可能希望提前了解其中是否包含不适宜与家人共同观看的镜头，这类查询通常与内容提示和分级信息相关。</p>
+        </div>
+        <div class="scene-item">
+          <h3>影视评论与作品分析</h3>
+          <p>在影评或学术讨论中，身体呈现往往被放在叙事、美学或社会文化背景中分析，此时它属于创作研究的一部分，而非单纯的尺度标签。</p>
+        </div>
+        <div class="scene-item">
+          <h3>内容审核与平台规范</h3>
+          <p>内容平台依据所在地法规与自身社区规范，对上传内容进行审核与管理。不同平台的具体尺度标准可能存在差异。</p>
+        </div>
+        <div class="scene-item">
+          <h3>家长与教育场景</h3>
+          <p>家长和教师在引导未成年人使用媒介时，可能会关注相关内容提示，以便进行适当的沟通与陪伴，培养健康的媒介使用习惯。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 选择建议 -->
+  <section id="advice" class="bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">选择建议</span>
+        <h2>面对画面尺度信息时的理性做法</h2>
+        <p>与其依赖单一说法做判断，不如建立一套更可靠的判断与选择方式。</p>
+      </div>
+      <div class="tips-wrap">
+        <ol class="tips-list">
+          <li><b>优先查看官方分级与内容提示。</b>影院、流媒体平台和发行方通常会在作品信息页标注年龄建议或内容说明，这类信息比零散的网络说法更可靠。</li>
+          <li><b>区分“作品主题”与“个别镜头”。</b>一部作品的整体定位与其中某个镜头是两回事，判断是否适合观看应看整体，而不是被单一画面标签左右。</li>
+          <li><b>尊重家庭与个人边界。</b>与家人、儿童共同观看时，提前了解内容并作出合适安排，是对他人感受的基本尊重。</li>
+          <li><b>遵守所在地法律法规。</b>不同地区对影像内容的传播与观看有相应规定，使用正规平台、在合法范围内观看是基本前提。</li>
+          <li><b>保持对未成年人保护的意识。</b>不向未成年人传播不适宜内容，也不以猎奇心态传播未经核实的信息。</li>
+          <li><b>把注意力放回作品本身。</b>影像作品的价值更多体现在叙事、表演、摄影与思想表达上，单一标签很难概括一部作品。</li>
+        </ol>
+        <aside class="side-box">
+          <h3>几个容易踩的误区</h3>
+          <p>这些想法在讨论中很常见，但往往会让判断偏离事实。</p>
+          <ul>
+            <li>把口语说法当成正式分级术语</li>
+            <li>用单一镜头概括整部作品</li>
+            <li>相信来源不明的“尺度清单”</li>
+            <li>忽视平台与地区的规则差异</li>
+            <li>将内容提示等同于艺术评价</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-white">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">常见问题</span>
+        <h2>关于这个说法的常见疑问</h2>
+        <p>以下回答以通用常识与分级逻辑为基础，不针对任何具体作品。</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" type="button">它是一个正式的影视分级术语吗？</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              不是。它更接近日常口语中的概括性说法，并非各国分级体系中的标准术语。正式的分级表述通常使用明确的等级名称和内容说明，而不是这类口语词。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">分级只看画面暴露程度吗？</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              不是。分级通常综合考量暴力、语言、恐怖元素、性暗示、药物使用、主题深度等多个维度，身体呈现只是可能被纳入参考的因素之一，而且不同体系的权重并不相同。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">不同地区的标准为什么不一样？</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              分级制度与文化传统、法律法规、社会共识和行业惯例密切相关。各地在这些方面存在差异，因此同一部作品在不同地区可能获得不同等级或不同处理方式，这是正常现象。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">如何判断一部作品是否适合自己观看？</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              建议优先参考官方分级信息与平台内容提示，结合自身接受度和观看场合做决定。如果是与家人或未成年人共同观看，提前了解内容并做好沟通会更稳妥。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">遇到来源不明的“尺度清单”该怎么办？</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              这类信息往往缺乏核实依据，容易被夸大或断章取义。更可靠的做法是查看官方渠道发布的分级与内容说明，不轻信、不传播未经证实的内容。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">讨论这类话题时应注意什么？</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              保持客观与尊重，避免猎奇化表达，不传播不适宜内容，尤其要注意未成年人保护。把讨论放在分级制度、媒介素养和作品分析等有实际意义的层面上，会更有价值。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-mark">尺</span>
+          画面尺度观察
+        </div>
+        <p>一个围绕影视内容分级、画面尺度与媒介素养的参考页面，帮助读者用更清晰的方式理解相关概念，作出适合自己的观看选择。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#concept">术语说明</a></li>
+          <li><a href="#rating">分级对照</a></li>
+          <li><a href="#scene">使用场景</a></li>
+          <li><a href="#advice">选择建议</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>相关主题</h4>
+        <ul>
+          <li><a href="#rating">内容分级制度</a></li>
+          <li><a href="#scene">平台内容提示</a></li>
+          <li><a href="#advice">媒介素养</a></li>
+          <li><a href="#faq">未成年人保护</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>使用说明</h4>
+        <ul>
+          <li><a href="#faq">信息仅供参考</a></li>
+          <li><a href="#rating">以官方标注为准</a></li>
+          <li><a href="#advice">遵守当地法规</a></li>
+          <li><a href="#top">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>本页内容用于概念说明与信息参考，不针对任何具体作品作出判断。</span>
+      <span>请遵守所在地区法律法规与平台使用条款。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function (item) {
+    var btn = item.querySelector('.faq-q');
+    var panel = item.querySelector('.faq-a');
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      items.forEach(function (other) {
+        other.classList.remove('open');
+        other.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // 导航平滑滚动
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var id = this.getAttribute('href');
+      if (id.length > 1) {
+        var target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+  </html>
